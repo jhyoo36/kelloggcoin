@@ -41,10 +41,10 @@ for transaction in blockchain
     balances[from_user] = 0
   end
 
-  balances[to_user] += amount
+  balances[to_user] = balances[to_user]+ amount
   
   if from_user != nil
-    balances[from_user] -= amount
+    balances[from_user] = balances[from_user]-amount
   end
 end
 
